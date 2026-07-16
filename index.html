@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 맞추기 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>숫자 맞추기 게임</h1>
+      <p class="description">1부터 100 사이의 숫자를 맞춰보세요.</p>
+
+      <div class="card">
+        <p id="message">새 게임이 시작되었습니다. 숫자를 입력해 주세요.</p>
+        <div class="status-row">
+          <span>시도 횟수: <strong id="attempts">0</strong></span>
+          <span>범위: 1 ~ 100</span>
+        </div>
+
+        <form id="guess-form">
+          <input id="guess-input" type="number" min="1" max="100" placeholder="예: 42" required />
+          <button type="submit">입력</button>
+        </form>
+
+        <button id="restart-btn" class="secondary">새 게임</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
